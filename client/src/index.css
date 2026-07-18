@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+:root,
+body,
+#root {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.app-container {
+  background-image: url('/home/suryansh/Development/Full-stack/Resume Roaster/client/bg6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
