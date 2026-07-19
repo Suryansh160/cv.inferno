@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 
-function CopyPasteBox () {
+function CopyPasteBox ({ onFileSelect }) {
   const [isDragging, setIsDragging] = useState(false)
   const [file, setFile] = useState(null)
   const fileInputRef = useRef(null)
@@ -21,6 +21,7 @@ function CopyPasteBox () {
     const droppedFile = e.dataTransfer.files[0]
     if (droppedFile) {
       setFile(droppedFile)
+      onFileSelect?.(droppedFile)
     }
   }
 
@@ -28,6 +29,7 @@ function CopyPasteBox () {
     const selectedFile = e.target.files[0]
     if (selectedFile) {
       setFile(selectedFile)
+      onFileSelect?.(selectedFile)
     }
   }
 
