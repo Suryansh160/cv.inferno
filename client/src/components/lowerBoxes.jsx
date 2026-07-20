@@ -3,7 +3,7 @@ import { Flame, Skull, ShieldCheck, MessageSquareWarning } from "lucide-react";
 
 function FeatureCard({ icon: Icon, title, description }) {
   return (
-    <div className="backdrop-blur-md rounded-2xl border border-gray-200 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+    <div className="backdrop-blur-md rounded-2xl border border-gray-600 p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow">
       <div className="mb-4">
         <Icon className="w-8 h-8 text-gray-900" strokeWidth={2} />
       </div>
@@ -24,7 +24,7 @@ const FEATURES = [
   },
   {
     icon: Skull,
-    title: "Line-by-Line Savagery",
+    title: "Line-by-Line Checking",
     description:
       "Every bullet point gets judged. Weak verbs, vague claims, and filler get called out one by one.",
   },

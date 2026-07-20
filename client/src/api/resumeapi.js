@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://cv-inferno.onrender.com";
 
 export async function roastResume(file) {
   const formData = new FormData();

@@ -14,7 +14,6 @@ function RoastModal ({ result, onClose }) {
           onClick={onClose}
           className='absolute top-5 right-5 text-black/50 hover:text-black text-3xl'
         >
-          ×
         </button>
 
         <div className='flex gap-12 mb-8'>
